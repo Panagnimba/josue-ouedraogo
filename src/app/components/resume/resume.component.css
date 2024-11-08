@@ -1,6 +1,5 @@
 /* .section.resume{
-    transform: translateZ(50vw) translateZ(-50vw) rotateY(90deg);
-    transform-origin: 50%;
+    background-color: red;
 } */
 
 .resume .title {
@@ -56,7 +55,6 @@
 .tab-grid {
     position: absolute;
     width: 100%;
- 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3rem;
