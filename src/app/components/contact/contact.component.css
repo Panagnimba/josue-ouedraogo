@@ -1,6 +1,6 @@
 /* .contact{
-   
 } */
+
 .btn {
     display: inline-flex;
     padding: 1.2rem 3rem;
@@ -14,7 +14,6 @@
     white-space: nowrap;
 }
 .contact-wrapper{
-    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -29,6 +28,7 @@
 
 .contact-form h3{
     font-size: 3rem;
+    text-align: center;
     color: var(--main-color);
     margin-bottom: 1rem;
 }
@@ -41,6 +41,7 @@
 
 .contact-form .field-box input, 
 .contact-form .field-box textarea{
+    width: 100%;
     flex: 1 1 30rem;
     padding: 2rem;
     background: var(--third-bg-color);

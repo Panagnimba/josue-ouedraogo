@@ -203,25 +203,25 @@ export class DataService {
 
   private educationDataEn = [
     {
-      "date": "2024",
+      "date": "2022 - On going",
       "course": "Computer Engineering",
       "institution": "National Higher School of Computer Science and Systems Analysis (ENSIAS)",
       "description": "Engineering program focused on the convergence of computer science and logistics technologies"
     },
     {
-      "date": "2022",
+      "date": "2021 - 2022",
       "course": "Professional Bachelor's Degree",
       "institution": "Higher School of Technology Essaouira (ESTE)",
       "description": "Professional Bachelor's Degree in Computer Systems and Software Engineering"
     },
     {
-      "date": "2021",
+      "date": "2019 - 2021",
       "course": "University Diploma of Technology",
       "institution": "Higher School of Technology Agadir (ESTA)",
       "description": "University Diploma of Technology in Computer Engineering"
     },
     {
-      "date": "2019",
+      "date": "2018 - 2019",
       "course": "Technological Baccalaureate",
       "institution": "Polytechnic Center for Vocational Training (CPFP)",
       "description": "Technological Baccalaureate in Electronics: Series F2"
@@ -229,25 +229,25 @@ export class DataService {
   ]
   private educationDataFr = [
     {
-      date: "2024",
+      date: "2022 - En cours",
       course: "Ingénieur en Informatique",
       institution: "École Nationale Supérieure d'Informatique et d'Analyse des Systèmes (ENSIAS)",
       description: "Formation d'ingénieur axée sur la convergence de l'informatique et des technologies logistiques"
     },
     {
-      date: "2022",
+      date: "2021 - 2022",
       course: "Licence Professionnelle",
       institution: "École Supérieure de Technologie Essaouira (ESTE)",
       description: "Licence Professionnelle en Ingénierie des Systèmes Informatiques et Logiciels"
     },
     {
-      date: "2021",
+      date: "2019 - 2021",
       course: "Diplôme Universitaire de Technologie",
       institution: "École Supérieure de Technologie Agadir (ESTA)",
       description: "Diplôme Universitaire de Technologie en Génie Informatique"
     },
     {
-      date: "2019",
+      date: "2018 - 2019",
       course: "Baccalauréat Technologique",
       institution: "Centre Polytechnique de Formation Professsionnelle (CPFP)",
       description: "Baccalauréat Technologique option Electronique: Série F2"
