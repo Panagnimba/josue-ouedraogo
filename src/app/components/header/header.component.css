@@ -1,0 +1,15 @@
+#header{
+    display:flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+#header select{
+    font-size: 11px;
+    color: var(--white-color);
+    background-color: transparent;
+}
+#header select option{
+    background-color: var(--bg-color);
+}

@@ -1,0 +1,10 @@
+<div class="nav">
+    <ul class="nav-list">
+        @for(item of navList; track item.id){
+            <li [class]="item.isActive ? 'active' : 'inactive'" (click)="handleClick({itemId:item.id})">
+                <i [class]='item.icon'></i>
+                <span class="tooltip">{{item.title}}</span>
+            </li>
+        }
+    </ul>
+</div>

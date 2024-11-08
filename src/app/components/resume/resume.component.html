@@ -1,0 +1,41 @@
+<section class="section resume">
+    <!-- <h2 class="title">{{resumeData.title}}</h2> -->
+    <div class="tab-box">
+        @for(tabItem of tabs; track tabItem.id){
+        <div class="tab-list resume-list" [class]="tabItem.isActive ? 'active':''"
+            (click)="handleTabClick({ itemId : tabItem.id})">
+            <h3>{{tabItem.title}}</h3>
+        </div>
+        }
+    </div>
+    <div class="tab-wrapper">
+        <div class="tab-grid resume-box education" [class]=" activeTab== 0 ? 'active':''">
+            @for(item of educationData; track $index){
+            <div class="tab-item resume-item">
+                <h4>{{item.date}}</h4>
+                <h4>{{item.course}}</h4>
+                <h4>{{item.institution}}</h4>
+                <p>{{item.description}}</p>
+            </div>
+            }
+        </div>
+        <div class="tab-grid resume-box skills" [class]=" activeTab== 1 ? 'active':''">
+            @for(item of skillsData; track $index){
+            <div class="tab-item resume-item">
+                <i [class]='item.icon'></i>
+                <p>{{item.name}}</p>
+            </div>
+            }
+        </div>
+        <div class="tab-grid resume-box experience" [class]=" activeTab== 2 ? 'active':''">
+            @for(item of experienceData; track $index){
+            <div class="tab-item resume-item">
+                <h4>{{item.date}}</h4>
+                <h4>{{item.position}}</h4>
+                <h4>{{item.company}}</h4>
+                <p>{{item.description}}</p>
+            </div>
+            }
+        </div>
+    </div>
+</section>

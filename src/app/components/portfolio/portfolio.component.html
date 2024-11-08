@@ -1,0 +1,49 @@
+<section class="section portfolio">
+    <!-- <h2 class="title">Portfolio</h2> -->
+    <div class="tab-box">
+        @for(tabItem of portfolioTabs; track tabItem.id){
+        <div class="tab-list portfolio-list" [class]="tabItem.isActive ? 'active':''"
+            (click)="handleTabClick({ itemId : tabItem.id})">
+            <h3>{{tabItem.title}}</h3>
+        </div>
+        }
+    </div>
+    <div class="tab-wrapper">
+        <div class="tab-grid portfolio-box work" [class]=" activeTab== 0 ? 'active':''">
+            @for(project of projects; track $index){
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img [src]="project.image">
+                </div>
+                <div class="work-info">
+                    <h4>{{project.title}}</h4>
+                    <p>{{project.description}} </p>
+                    <div class="tech-used">
+                        <p>
+                            @for(usedTech of project.technologies; track $index){
+                            <span>{{usedTech}} </span>
+                            }
+                        </p>
+                    </div>
+                    <div class="portfolio-icon work-icon">
+                        <a [href]="project.links.preview.url">
+                            <i [class]='project.links.preview.icon'></i>
+                            <span class="tooltip">{{project.links.preview.tooltip}}</span>
+                        </a>
+                        <a [href]="project.links.github.url">
+                            <i [class]='project.links.github.icon'></i>
+                            <span class="tooltip">{{project.links.github.tooltip}} </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            }
+        </div>
+        <div class="tab-grid portfolio-box service ">
+            <div class="tab-item portfolio-item">
+                service test
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+<section class="section contact">
+    <div class="contact-wrapper">
+        <form action="" class="contact-form">
+            <h3>{{contactInfo.title}}</h3>
+            <div class="field-box">
+                @for( contact of contactInfo.fields; track $index){
+                    <input [type]="contact.type" [placeholder]="contact.placeholder" required>
+                }
+                <textarea name="" id="" placeholder="Message" required></textarea>
+            </div>
+            <div class="contact-btn">
+                <button type="submit" class="btn">{{contactInfo.submitButton.text}}</button>
+            </div>
+        </form>
+    </div>
+</section>

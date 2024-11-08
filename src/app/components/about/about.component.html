@@ -1,0 +1,22 @@
+<section class="section about">
+    <div class="img-wrapper">
+        <div class="img-box about-img">
+            <img [src]="aboutData.imgBox.src" alt="">
+        </div>
+    </div>
+    <div class="about-info">
+        <h2 class="title">{{aboutData.info.title}}</h2>
+        <h3>{{aboutData.info.profession}}</h3>
+        <p class="desc">
+            {{aboutData.info.description}}
+            <!-- Étudiant en ingénierie informatique spécialisé en <b>supply chain</b> et logistique, je suis
+            un
+            développeur full stack expérimenté dans les technologies web et mobile, notamment
+            <b>Node.js</b>,
+            <b>React.js</b>, <b>Nuxt.js</b>, et <b>React Native</b> . Je possède de solides compétences
+            en gestion de bases de
+            données relationnelles et non relationnelles (<b>SQL, Oracle, MongoDB</b>). -->
+        </p>
+        <a [href]="aboutData.info.btn.url" target="_blank" class="btn">{{aboutData.info.btn.text}}</a>
+    </div>
+</section>

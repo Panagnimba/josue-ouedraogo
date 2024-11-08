@@ -1,0 +1,26 @@
+<section class="section home">
+    <div class="home-info">
+        <h3>{{profileData.hello}}</h3>
+        <h1>{{profileData.name}}</h1>
+        <h3>{{profileData.profession}}</h3>
+        <p class="desc">
+            {{profileData.description}}
+        </p>
+        <div class="btn-sci">
+            <a [href]="profileData.cv.url" class="btn" download="cv_josue_ouedraogo">{{profileData.cv.label}}</a>
+            <div class="sci">
+                @for(item of profileData.social_links; track item.platform){
+                <a [href]="item.url" target="_blank">
+                    <i [class]="item.icon"></i>
+                    <span class="tooltip">{{item.platform}}</span>
+                </a>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <div class="img-box home-img">
+            <img src="./images/josue_ouedraogo.png" alt="">
+        </div>
+    </div>
+</section>

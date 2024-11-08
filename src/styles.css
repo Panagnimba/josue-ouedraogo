@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white-color);
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+
+
+:root {
+    --nav-bg-color: rgba(255, 255, 255, .1);
+    --bg-color: #171f2b;
+    --second-bg-color: #1f2733;
+    --third-bg-color: #2d3542;
+    --main-color: #0ef;
+    --white-color: #fff;
+    --tab-list-color: #7c8594;
+    /*  */
+    --global-padding-horizontal: 6%;
+    --global-padding-vertical: 10rem;
+    /*  */
+    --slide-menu-max-width-value: 250px;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+    width: .4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 1rem;
+}
+
+::placeholder {
+    color: var(--white-color)
+}
+
+.tooltip {
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding: .3rem 1rem;
+    background: var(--main-color);
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--bg-color);
+    white-space: nowrap;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+a{
+    text-decoration: none;
+}
+.nav-list li:hover .tooltip,
+a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    perspective: 1500px;
+    perspective-origin: 50%;
+}
+.box.inactive{
+    opacity: 0; 
+}
+.box.active {
+    opacity: 1;  
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% -50vw;
+    transform: rotateY(0deg);
+    transition:  2s; 
+}
+.section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--bg-color);
+    padding: 1.55rem;
+    max-height: 100%;
+    overflow: hidden scroll;
+    backface-visibility: hidden;
+}
+.section:nth-child(even){
+    background-color: var(--second-bg-color);
+}
+
+
+@media only screen and (max-width:750px) {
+    .home,.about {
+        flex-direction: column;
+    }
+
+    .nav {
+        background: var(--bg-color);
+        border: 1px solid var(--nav-bg-color);
+    }
+}

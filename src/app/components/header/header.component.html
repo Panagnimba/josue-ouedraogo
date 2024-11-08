@@ -1,0 +1,7 @@
+<header id="header">
+    <div></div>
+    <select name="lang" (change)="handleSelectLang($event)">
+        <option value="fr" [selected]="currentLanguage === 'fr'">&nbsp; 🇫🇷 &nbsp; Français &nbsp;</option>
+        <option value="en" [selected]="currentLanguage === 'en'">&nbsp; 🇺🇸 &nbsp; English  &nbsp;</option>
+    </select>
+</header>
